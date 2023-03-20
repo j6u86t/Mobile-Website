@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html> 
   <head>
     <meta charset="utf-8"/>
@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
     <script src="jquery-2.1.4.min.js"></script>
     <script src="jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="position.css">
     <!-- http://localhost:8080/first.html -->
   </head>
   <body>
     <!-- 登入畫面 -->
-    <div data-role="loadng">
-      <img src="登入畫面.png" alt="無法顯示" style="width:auto;height:auto;"> 
+    <div data-role="page" id="login">
+      <div data-role="header">
+      </div>
+      <div data-role="main" class="ui-content">
+        <img src="pngtree-hello-cute-cute-meow-illustration-material-png-image_4452658.png" alt="Login Image" style="width: 100%;height: 100vh;">
+        <div style="text-align: center;" class="position">
+          <p>是否進入網站</p>
+          <a href="#首頁" class="ui-btn ui-btn-inline" style="background-color: green;color: white;">確認</a>
+          <a href="#" data-rel="back" class="ui-btn ui-btn-inline ui-btn-b" style="background-color: red;color: white">取消</a>
+        </div>
+      </div>
+      <div data-role="footer" data-position="fixed"></div>
     </div>
     <!--首頁-->
     <div data-role="page" id="首頁">
@@ -170,12 +181,14 @@
       </div>
     </div>
     <!-- 地圖 -->
-    <div data-role="page" data-dialog="true"id="地圖">
+    <div data-role="page" data-dialog="true" id="地圖">
       <div data-role="header"></div>
         <div data-role="main" class="ui-content">
-          <img src="地球.png" alt="無法顯示" style="width: auto;height: auto;">
-          <a href="#delete">確定</a>
-          <a href="#" data-rel="back">取消</a>
+          <img src="pngtree-hello-cute-cute-meow-illustration-material-png-image_4452658.png" alt="無法顯示" style="width: auto;height: auto;">
+          <div style="text-align: center;">
+            <a href="#" data-rel="back" class="ui-btn ui-btn-inline">確定</a>
+            <a href="#" data-rel="back" class="ui-btn ui-btn-inline ui-btn-b">取消</a>
+          </div>
         </div>
     </div>
   </body>
